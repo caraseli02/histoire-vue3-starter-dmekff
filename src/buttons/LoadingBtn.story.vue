@@ -8,7 +8,7 @@ const text = ref('Click me')
 
 <template>
   <Story>
-    <LoadingBtn loading @click="hstEvent('click', $event)">
+    <LoadingBtn color="purpleBlue" loading @click="hstEvent('click', $event)">
       {{ text }}
     </LoadingBtn>
 
