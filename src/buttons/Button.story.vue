@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { hstEvent } from 'histoire/client'
-import PrimaryBtn from './PrimaryBtn.vue'
+import Button from './Button.vue'
 
 const text = ref('Click me')
 
@@ -23,14 +23,14 @@ const classesSwitch = (color) => {
       :key="color"
       :title="color"
     >
-    <PrimaryBtn :classes="classesSwitch(color)" @click="hstEvent('click', $event)">
+    <Button :classes="classesSwitch(color)" @click="hstEvent('click', $event)">
       {{ color }}
-    </PrimaryBtn>
+    </Button>
     </Variant>
     <Variant
       title="disabled"
     >
-    <PrimaryBtn :classes="classesSwitch()" label="Dissabled" disabled @click="hstEvent('click', $event)"/>
+    <Button :classes="classesSwitch()" label="Dissabled" disabled @click="hstEvent('click', $event)"/>
     </Variant>
     <template #controls>
       <HstText title="default slot" v-model="text" />
