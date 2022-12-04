@@ -1,12 +1,12 @@
 /// <reference types="histoire" />
 
-import { defineConfig } from 'vite';
-import { resolve } from 'pathe';
-import vue from '@vitejs/plugin-vue';
-import VueI18n from '@intlify/vite-plugin-vue-i18n';
+import { defineConfig } from 'vite'
+import { resolve } from 'pathe'
+import vue from '@vitejs/plugin-vue'
+import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Components from 'unplugin-vue-components/vite'
-import ViteFonts from 'vite-plugin-fonts';
-import svgLoader from 'vite-svg-loader';
+import ViteFonts from 'vite-plugin-fonts'
+import svgLoader from 'vite-svg-loader'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -50,4 +50,4 @@ export default defineConfig({
       'vue-demi',
     ],
   },
-});
+})
