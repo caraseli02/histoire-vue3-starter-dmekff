@@ -8,7 +8,9 @@
     "serve": "vite preview",
     "story:dev": "histoire dev",
     "story:build": "histoire build",
-    "story:preview": "histoire preview"
+    "story:preview": "histoire preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@heroicons/vue": "^2.0.12",
@@ -16,12 +18,14 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.33.1",
     "@histoire/plugin-vue": "^0.11.5",
     "@intlify/vite-plugin-vue-i18n": "^6.0.1",
     "@types/node": "^18.7.4",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vueuse/core": "^9.1.0",
     "autoprefixer": "^10.4.12",
+    "eslint": "^8.29.0",
     "histoire": "^0.11.5",
     "pathe": "^0.3.4",
     "postcss": "^8.4.18",
