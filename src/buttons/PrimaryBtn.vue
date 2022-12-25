@@ -15,7 +15,10 @@ const props = defineProps<{
   loadingIcon?: string
 }>()
 
-const disabled= computed(() => attrs.disabled || props.loading)
+const disabled= computed(() => {
+  if(attrs.disabled || props.loading) return true
+  else return false
+  })
 </script>
 
 <template>
@@ -25,7 +28,8 @@ const disabled= computed(() => attrs.disabled || props.loading)
     >
       <slot>
         <span class="p-button-label">{{ label || '&nbsp;' }}</span>
-      </slot> 
+      </slot>
+      <slot name="icon" />
     </span>
   </button>
 </template>
